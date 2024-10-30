@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+}
+.cantainer{
+    width: 100%;
+    height: 100vh;
+    background: #f2e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_box{
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(./img/jonm.jpg);
+    background-size: cover;
+    background-position:center;
+    position: relative;
+    transition: width 0.8s;
+}
+.img_box:nth-child(2){
+    background: url(./img/jonm1.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.img_box:nth-child(3){
+    background: url(./img/jonm2.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.img_box:nth-child(4){
+    background: url(./img//jonm3.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.img_box h3{
+    color:#fff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+}
+.img_box:hover{
+    width:400px;
+    cursor:pointer;
+}
